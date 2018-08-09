@@ -1,6 +1,6 @@
 ay_fv_extra
 ==================
-Extra configurations and launch files of the `fingervision` package (FingerVision data processing package).
+Extra configurations and launch files of the [`fingervision`](https://github.com/akihikoy/fingervision) package (FingerVision data processing package).
 
 `ay_fv_extra` uses the ROS package provided by `fingervision`.
 
