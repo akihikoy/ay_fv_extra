@@ -19,4 +19,12 @@
     <param name="frame_skip" value="0" />
     <param name="target_fps" value="30" />
   </node>
+  <node type="fv_filter1.py" pkg="fingervision" name="fv_filter1_l" ns="fingervision" output="screen">
+    <param name="fv" value="fv_pi11_l" />
+    <param name="side" value="l" />
+  </node>
+  <node type="fv_filter1.py" pkg="fingervision" name="fv_filter1_r" ns="fingervision" output="screen">
+    <param name="fv" value="fv_pi11_r" />
+    <param name="side" value="r" />
+  </node>
 </launch>

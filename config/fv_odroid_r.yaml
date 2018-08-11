@@ -1,7 +1,8 @@
 %YAML:1.0
 CameraInfo:
   -
-    Name: fv_odroid_r
+    Name: fv_pi11_r
+    #For the compatibility, this is not fv_odroid_r
     DevID: "1"
     Width: 320
     Height: 240
