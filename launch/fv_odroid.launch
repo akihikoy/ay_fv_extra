@@ -1,5 +1,5 @@
 <launch>
-  <node type="fv_core_node" pkg="fingervision" name="fv_odroid_l" ns="fingervision" output="screen">
+  <node type="fv_core_node" pkg="fingervision" name="fv_pi11_l" ns="fingervision" output="screen">
     <param name="pkg_dir" value="$(find ay_fv_extra)/" />
     <param name="cam_config" value="config/fv_odroid_l.yaml" />
     <param name="stereo_config" value="config/fv_odroid_l.yaml" />
@@ -9,7 +9,8 @@
     <param name="frame_skip" value="0" />
     <param name="target_fps" value="20" />
   </node>
-  <node type="fv_core_node" pkg="fingervision" name="fv_odroid_r" ns="fingervision" output="screen">
+  <!--
+  <node type="fv_core_node" pkg="fingervision" name="fv_pi11_r" ns="fingervision" output="screen">
     <param name="pkg_dir" value="$(find ay_fv_extra)/" />
     <param name="cam_config" value="config/fv_odroid_r.yaml" />
     <param name="stereo_config" value="config/fv_odroid_r.yaml" />
@@ -18,6 +19,13 @@
     <param name="blob_calib_prefix" value="data_gen/blob_" />
     <param name="frame_skip" value="0" />
     <param name="target_fps" value="20" />
+  </node>
+  -->
+  <!--In order to reduce the computation cost, we clone fv_pi11_l as fv_pi11_r,
+  i.e. they publish the same topics and provide the same services.-->
+  <node type="fv_clone.py" pkg="fingervision" name="fv_pi11_r" ns="fingervision" output="screen">
+    <param name="fv_from" value="fv_pi11_l" />
+    <param name="fv_to" value="fv_pi11_r" />
   </node>
   <node type="fv_filter1.py" pkg="fingervision" name="fv_filter1_l" ns="fingervision" output="screen">
     <param name="fv" value="fv_pi11_l" />
