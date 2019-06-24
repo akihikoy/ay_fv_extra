@@ -1,8 +1,7 @@
 %YAML:1.0
 CameraInfo:
   -
-    #We use fv_pi13 on purpose rather than fv_pi14 for the compatibility.
-    Name: fv_pi13_l
+    Name: fv_pi15_l
     DevID: "http://aypi15:8080/?action=stream&dummy=file.mjpg"
     Width: 320
     Height: 240
