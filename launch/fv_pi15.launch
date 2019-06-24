@@ -1,0 +1,31 @@
+<launch>
+  <!--We run FV on pi15 as pi13 for the compatibility-->
+  <node type="fv_core_node" pkg="fingervision" name="fv_pi13_l" ns="fingervision" output="screen">
+    <param name="pkg_dir" value="$(find ay_fv_extra)/" />
+    <param name="cam_config" value="config/fv_pi15_l.yaml" />
+    <param name="stereo_config" value="config/fv_pi15_l.yaml" />
+    <param name="blobtrack_config" value="config/fv_pi15_l.yaml" />
+    <param name="objdettrack_config" value="config/fv_pi15_l.yaml" />
+    <param name="blob_calib_prefix" value="data_gen/blob_" />
+    <param name="frame_skip" value="0" />
+    <param name="target_fps" value="30" />
+  </node>
+  <node type="fv_core_node" pkg="fingervision" name="fv_pi13_r" ns="fingervision" output="screen">
+    <param name="pkg_dir" value="$(find ay_fv_extra)/" />
+    <param name="cam_config" value="config/fv_pi15_r.yaml" />
+    <param name="stereo_config" value="config/fv_pi15_r.yaml" />
+    <param name="blobtrack_config" value="config/fv_pi15_r.yaml" />
+    <param name="objdettrack_config" value="config/fv_pi15_r.yaml" />
+    <param name="blob_calib_prefix" value="data_gen/blob_" />
+    <param name="frame_skip" value="0" />
+    <param name="target_fps" value="30" />
+  </node>
+  <node type="fv_filter1.py" pkg="fingervision" name="fv_filter1_l" ns="fingervision" output="screen">
+    <param name="fv" value="fv_pi13_l" />
+    <param name="side" value="l" />
+  </node>
+  <node type="fv_filter1.py" pkg="fingervision" name="fv_filter1_r" ns="fingervision" output="screen">
+    <param name="fv" value="fv_pi13_r" />
+    <param name="side" value="r" />
+  </node>
+</launch>
