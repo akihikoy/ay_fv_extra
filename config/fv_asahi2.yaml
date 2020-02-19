@@ -4,10 +4,10 @@ CameraInfo:
   -
     Name: fv_test
     DevID: "1"
-    #Width: 640
-    #Height: 480
-    Width: 320
-    Height: 240
+    Width: 640
+    Height: 480
+    #Width: 320
+    #Height: 240
     PixelFormat: MJPG
     NRotate90: 2
     Rectification: 0
