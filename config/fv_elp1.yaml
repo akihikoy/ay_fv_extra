@@ -72,18 +72,18 @@ ObjDetTrack:
     BinsH: 50
     BinsS: 10
     BinsV: 10
-    Fbg: 1.0
+    Fbg: 2.0
     Fgain: 2.5
     NumModel: 5
     NumFramesInHist: 200
     BackProjScale: 5.0
     NThreshold2: 150
     NErode2: 2
-    NDilate2: 7
+    NDilate2: 2
     NCalibBGFrames: 3
-    ObjSW: 3
-    ObjSH: 3
-    MvSW: 3
-    MvSH: 3
+    ObjSW: 9
+    ObjSH: 9
+    MvSW: 9
+    MvSH: 9
 
 StereoInfo:{}
