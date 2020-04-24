@@ -1,0 +1,70 @@
+%YAML:1.0
+#Camera info of Asahi camera.
+CameraInfo:
+  -
+    Name: fvo2_1
+    DevID: "1"
+    Width: 640
+    Height: 480
+    #Width: 320
+    #Height: 240
+    PixelFormat: MJPG
+    NRotate90: 2
+    Rectification: 0
+    Alpha: 0.8
+
+BlobTracker2:
+  -
+    #SBDParams_filterByColor: 0
+    #SBDParams_blobColor: 0
+    #SBDParams_minThreshold : 5
+    #SBDParams_maxThreshold : 200
+    #SBDParams_filterByArea : true
+    SBDParams_minArea : 30
+    SBDParams_maxArea : 640
+    #SBDParams_filterByCircularity : true
+    SBDParams_minCircularity : 0.5
+    #SBDParams_filterByConvexity : true
+    SBDParams_minConvexity : 0.5  #0.6
+    #SBDParams_filterByInertia : true
+    #SBDParams_minInertiaRatio : 0.01
+    ThresholdingImg: 0
+    SWidth: 60  #30
+    VPMax: 8.0  #5.0
+    VSMax: 4.0  #1.0
+    NReset: 180
+    DistMaxCalib: 0.4 #0.8
+    DSMaxCalib: 0.2 #0.5
+    DSEmp: 4.0
+    DPEmp: 10.0
+    NCalibPoints: 10
+
+ObjDetTrack:
+  -
+    Width: 320
+    Height: 240
+    ThreshBlkH: 180
+    ThreshBlkS: 255
+    ThreshBlkV: 1
+    BS_History: 30.0
+    BS_VarThreshold: 10.0
+    BS_DetectShadows: true
+    NErode1: 0
+    BinsH: 50
+    BinsS: 10
+    BinsV: 10
+    Fbg: 1.0
+    Fgain: 2.5
+    NumModel: 5
+    NumFramesInHist: 200
+    BackProjScale: 5.0
+    NThreshold2: 150
+    NErode2: 2
+    NDilate2: 7
+    NCalibBGFrames: 3
+    ObjSW: 3
+    ObjSH: 3
+    MvSW: 3
+    MvSH: 3
+
+StereoInfo:{}

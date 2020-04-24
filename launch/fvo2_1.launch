@@ -1,0 +1,19 @@
+<launch>
+  <node type="fv_core_node" pkg="fingervision" name="fvo2_1" ns="fingervision" output="screen">
+    <param name="pkg_dir" value="$(find ay_fv_extra)/" />
+    <param name="cam_config" value="config/fvo2_1.yaml" />
+    <param name="stereo_config" value="config/fvo2_1.yaml" />
+    <param name="blobtrack_config" value="config/fvo2_1.yaml" />
+    <param name="objdettrack_config" value="config/fvo2_1.yaml" />
+    <param name="blob_calib_prefix" value="data_gen/blob_" />
+    <param name="frame_skip" value="0" />
+    <param name="target_fps" value="0" />
+  </node>
+  <node type="fv_filter1.py" pkg="fingervision" name="fv_filter1" ns="fingervision" output="screen">
+    <param name="fv" value="fvo2_1" />
+    <param name="side" value="l" />
+    <param name="normal_f_mode" value="xy_norm" />
+    <!--<param name="normal_f_mode" value="marker_size" />-->
+    <param name="filter_len" value="5" />
+  </node>
+</launch>
