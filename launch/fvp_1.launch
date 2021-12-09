@@ -11,6 +11,7 @@
     <param name="blobtrack_config" value="$(arg config1)" />
     <param name="objdettrack_config" value="$(arg config1)" />
     <param name="blob_calib_prefix" value="data_gen/blob_" />
+    <param name="publish_image" value="true" />
     <param name="frame_skip" value="0" />
     <param name="target_fps" value="30" />
   </node>
@@ -21,6 +22,7 @@
     <param name="blobtrack_config" value="$(arg config2)" />
     <param name="objdettrack_config" value="$(arg config2)" />
     <param name="blob_calib_prefix" value="data_gen/blob_" />
+    <param name="publish_image" value="true" />
     <param name="frame_skip" value="0" />
     <param name="target_fps" value="30" />
   </node>
