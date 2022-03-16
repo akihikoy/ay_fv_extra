@@ -3,16 +3,16 @@
 #Camera info of Asahi camera(CM).
 CameraInfo:
   -
-    Name: fvp_1_r
+    Name: fv_test
     #DevID: "http://localhost:8080/?action=stream&file=dummy.mjpg"
-    DevID: "/dev/video0"
+    DevID: "1"
     Width: 640
     Height: 480
     FPS: 60
     #Width: 320
     #Height: 240
     PixelFormat: MJPG
-    NRotate90: 0
+    NRotate90: 2
     Flip: 0
     #Rectification: 0
     Rectification: 1

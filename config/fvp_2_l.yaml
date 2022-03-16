@@ -1,6 +1,6 @@
 %YAML:1.0
 
-#Camera info of Asahi camera.
+#Camera info of Asahi camera(CM).
 CameraInfo:
   -
     Name: fvp_1_l
@@ -8,6 +8,7 @@ CameraInfo:
     DevID: "/dev/video4"
     Width: 640
     Height: 480
+    FPS: 60
     #Width: 320
     #Height: 240
     PixelFormat: MJPG

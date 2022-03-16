@@ -13,7 +13,7 @@
     <param name="blob_calib_prefix" value="data_gen/blob_" />
     <param name="publish_image" value="true" />
     <param name="frame_skip" value="0" />
-    <param name="target_fps" value="30" />
+    <param name="target_fps" value="0" />
   </node>
   <node type="fv_core_node" pkg="fingervision" name="$(arg fv2)" ns="fingervision" output="screen">
     <param name="pkg_dir" value="$(find ay_fv_extra)/" />
@@ -24,15 +24,19 @@
     <param name="blob_calib_prefix" value="data_gen/blob_" />
     <param name="publish_image" value="true" />
     <param name="frame_skip" value="0" />
-    <param name="target_fps" value="30" />
+    <param name="target_fps" value="0" />
   </node>
   <node type="fv_filter1.py" pkg="fingervision" name="fv_filter1_l" ns="fingervision" output="screen">
     <param name="fv" value="$(arg fv1)" />
     <param name="side" value="l" />
+    <param name="normal_f_mode" value="marker_size" />
+    <param name="filter_len" value="5" />
   </node>
   <node type="fv_filter1.py" pkg="fingervision" name="fv_filter1_r" ns="fingervision" output="screen">
     <param name="fv" value="$(arg fv2)" />
     <param name="side" value="r" />
+    <param name="normal_f_mode" value="marker_size" />
+    <param name="filter_len" value="5" />
   </node>
 
 </launch>
