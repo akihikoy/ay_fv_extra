@@ -84,7 +84,7 @@ BlobTracker2:
     SBDParams_minCircularity: 1.0000000149011612e-01
     SBDParams_maxCircularity: 3.4028234663852886e+38
     SBDParams_filterByConvexity: 1
-    SBDParams_minConvexity: 8.7000000476837158e-01
+    SBDParams_minConvexity: 7.1999996900558472e-01
     SBDParams_maxConvexity: 3.4028234663852886e+38
     SBDParams_filterByInertia: 1
     SBDParams_minInertiaRatio: 9.9999997764825821e-03
@@ -92,19 +92,19 @@ BlobTracker2:
     ThresholdingImg: 1
     ThreshH: 180
     ThreshS: 255
-    ThreshV: 18
+    ThreshV: 69
     NDilate1: 0
     NErode1: 0
     SWidth: 65.
     NonZeroMin: 0.
     NonZeroMax: 3.3299999237060547e+00
-    VPMax: 3.
-    VSMax: 5.
+    VPMax: 20.
+    VSMax: 20.
     NReset: 5
-    DistMaxCalib: 8.0000001192092896e-01
-    DSMaxCalib: 5.0000000000000000e-01
-    DSEmp: 1.
-    DPEmp: 10.
+    DistMaxCalib: 1.4699999094009399e+00
+    DSMaxCalib: 1.1399999856948853e+00
+    DSEmp: 3.5000000000000000e+00
+    DPEmp: 9.5000000000000000e+00
     NCalibPoints: 10
 
 ObjDetTrack:
