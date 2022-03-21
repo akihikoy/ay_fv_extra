@@ -12,6 +12,7 @@
     <param name="publish_image" value="true" />
     <param name="frame_skip" value="0" />
     <param name="target_fps" value="0" />
+    <param name="capture_fps" value="0" />
   </node>
   <node type="fv_filter1.py" pkg="fingervision" name="fv_filter1_l" ns="fingervision" output="screen">
     <param name="fv" value="$(arg fv1)" />

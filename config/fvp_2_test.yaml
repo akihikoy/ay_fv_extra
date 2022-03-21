@@ -6,13 +6,14 @@ CameraInfo:
     Name: fv_test
     #DevID: "http://localhost:8080/?action=stream&file=dummy.mjpg"
     DevID: "1"
+    #DevID: "/mnt/hgfs/UbuntuShared/cho/fvp/2022_03_15-1/vout-fv_test-blob-orig0001.avi"
     Width: 640
     Height: 480
     FPS: 60
     #Width: 320
     #Height: 240
     PixelFormat: MJPG
-    NRotate90: 2
+    NRotate90: 0
     Flip: 0
     #Rectification: 0
     Rectification: 1
@@ -73,29 +74,33 @@ CameraParams:
 
 BlobTracker2:
   -
-    SBDParams_filterByColor: 0
-    SBDParams_blobColor: 0
-    SBDParams_minThreshold: 5.
-    SBDParams_maxThreshold: 200.
-    SBDParams_filterByArea: 1
-    SBDParams_minArea: 10.
-    SBDParams_maxArea: 632.
-    SBDParams_filterByCircularity: 1
-    SBDParams_minCircularity: 1.0000000149011612e-01
-    SBDParams_maxCircularity: 3.4028234663852886e+38
-    SBDParams_filterByConvexity: 1
-    SBDParams_minConvexity: 7.1999996900558472e-01
-    SBDParams_maxConvexity: 3.4028234663852886e+38
-    SBDParams_filterByInertia: 1
-    SBDParams_minInertiaRatio: 9.9999997764825821e-03
-    SBDParams_maxInertiaRatio: 3.4028234663852886e+38
-    ThresholdingImg: 1
+    SBDParams:
+      thresholdStep: 5.
+      minThreshold: 5.
+      maxThreshold: 70.
+      minRepeatability: 2
+      minDistBetweenBlobs: 10.
+      filterByColor: 1
+      blobColor: 0
+      filterByArea: 1
+      minArea: 10.
+      maxArea: 275.
+      filterByCircularity: 1
+      minCircularity: 1.0000000149011612e-01
+      maxCircularity: 3.4028234663852886e+38
+      filterByInertia: 1
+      minInertiaRatio: 9.9999997764825821e-03
+      maxInertiaRatio: 3.4028234663852886e+38
+      filterByConvexity: 1
+      minConvexity: 8.7000000476837158e-01
+      maxConvexity: 3.4028234663852886e+38
+    ThresholdingImg: 0
     ThreshH: 180
     ThreshS: 255
     ThreshV: 69
     NDilate1: 0
     NErode1: 0
-    SWidth: 65.
+    SWidth: 7.9099998474121094e+01
     NonZeroMin: 0.
     NonZeroMax: 3.3299999237060547e+00
     VPMax: 20.
