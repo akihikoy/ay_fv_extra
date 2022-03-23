@@ -84,7 +84,7 @@ BlobTracker2:
       blobColor: 0
       filterByArea: 1
       minArea: 10.
-      maxArea: 275.
+      maxArea: 300.
       filterByCircularity: 1
       minCircularity: 1.0000000149011612e-01
       maxCircularity: 3.4028234663852886e+38
@@ -100,10 +100,10 @@ BlobTracker2:
     ThreshV: 69
     NDilate1: 0
     NErode1: 0
-    SWidth: 7.9099998474121094e+01
+    SWidth: 60
     NonZeroMin: 0.
     NonZeroMax: 3.3299999237060547e+00
-    VPMax: 20.
+    VPMax: 6.
     VSMax: 20.
     NReset: 5
     DistMaxCalib: 1.4699999094009399e+00
