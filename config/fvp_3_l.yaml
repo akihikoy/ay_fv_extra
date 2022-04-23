@@ -5,7 +5,7 @@ CameraInfo:
   -
     Name: fvp_1_l
     #DevID: "http://localhost:8080/?action=stream&file=dummy.mjpg"
-    DevID: "/dev/video6"
+    DevID: "/dev/video4"
     #Width: 640
     #Height: 480
     FPS: 60
@@ -89,20 +89,20 @@ BlobTracker2:
     SBDParams_filterByInertia: 1
     SBDParams_minInertiaRatio: 9.9999997764825821e-03
     SBDParams_maxInertiaRatio: 3.4028234663852886e+38
-    ThresholdingImg: 1
+    ThresholdingImg: 0
     ThreshH: 180
     ThreshS: 255
     ThreshV: 18
     NDilate1: 0
     NErode1: 0
-    SWidth: 65.
+    SWidth: 54.
     NonZeroMin: 0.
     NonZeroMax: 3.3299999237060547e+00
     VPMax: 3.
     VSMax: 5.
     NReset: 5
-    DistMaxCalib: 8.0000001192092896e-01
-    DSMaxCalib: 5.0000000000000000e-01
+    DistMaxCalib: 1.6
+    DSMaxCalib: 1.0
     DSEmp: 1.
     DPEmp: 10.
     NCalibPoints: 10

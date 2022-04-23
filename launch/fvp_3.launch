@@ -29,13 +29,13 @@
   <node type="fv_filter1.py" pkg="fingervision" name="fv_filter1_l" ns="fingervision" output="screen">
     <param name="fv" value="$(arg fv1)" />
     <param name="side" value="l" />
-    <param name="normal_f_mode" value="marker_size" />
+    <param name="normal_f_mode" value="xy_norm" />
     <param name="filter_len" value="5" />
   </node>
   <node type="fv_filter1.py" pkg="fingervision" name="fv_filter1_r" ns="fingervision" output="screen">
     <param name="fv" value="$(arg fv2)" />
     <param name="side" value="r" />
-    <param name="normal_f_mode" value="marker_size" />
+    <param name="normal_f_mode" value="xy_norm" />
     <param name="filter_len" value="5" />
   </node>
 
