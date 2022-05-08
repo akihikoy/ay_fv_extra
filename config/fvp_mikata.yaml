@@ -101,7 +101,7 @@ BlobTracker2:
     NDilate1: 0
     NErode1: 0
     #SWidth: 60
-    SWidth: 40
+    SWidth: 48
     NonZeroMin: 0.
     NonZeroMax: 3.3299999237060547e+00
     VPMax: 6.
