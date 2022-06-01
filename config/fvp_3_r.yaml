@@ -5,7 +5,8 @@ CameraInfo:
   -
     Name: fvp_1_r
     #DevID: "http://localhost:8080/?action=stream&file=dummy.mjpg"
-    DevID: "/dev/video2"
+    #DevID: "/dev/video2"
+    DevID: "/media/video_fv2"
     #Width: 640
     #Height: 480
     FPS: 60
