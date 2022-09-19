@@ -1,0 +1,70 @@
+%YAML:1.0
+CameraInfo:
+  -
+    Name: fvp_1_r
+    DevID: "/media/fvdata/fv_demo/cam1_0001.m4v"
+    Width: 320
+    Height: 240
+    PixelFormat: MJPG
+    NRotate90: 0
+    Rectification: 1
+    Alpha: 0.8
+    K: !!opencv-matrix
+      rows: 3
+      cols: 3
+      dt: d
+      data: [ 2.9626599933569219e+02, 0., 1.6184603192794432e+02, 0.,
+          2.9626599933569219e+02, 1.2062472517136455e+02, 0., 0., 1. ]
+    D: !!opencv-matrix
+      rows: 1
+      cols: 5
+      dt: d
+      data: [ -9.5718286674593955e-01, 5.5100676290063433e-01, 0., 0., 0. ]
+    R: !!opencv-matrix
+      rows: 3
+      cols: 3
+      dt: d
+      data: [ 1.0, 0.0, 0.0,  0.0, 1.0, 0.0,  0.0, 0.0, 1.0 ]
+
+BlobTracker2:
+  -
+    SBDParams:
+        thresholdStep: 10.
+        minThreshold: 5.
+        maxThreshold: 200.
+        minRepeatability: 2
+        minDistBetweenBlobs: 10.
+        filterByColor: 1
+        blobColor: 0
+        filterByArea: 1
+        minArea: 10.
+        maxArea: 200.
+        filterByCircularity: 1
+        minCircularity: 1.0000000149011612e-01
+        maxCircularity: 3.4028234663852886e+38
+        filterByInertia: 1
+        minInertiaRatio: 9.9999997764825821e-03
+        maxInertiaRatio: 3.4028234663852886e+38
+        filterByConvexity: 1
+        minConvexity: 7.0500004291534424e-01
+        maxConvexity: 3.4028234663852886e+38
+    ThresholdingImg: 0
+    ThreshH: 180
+    ThreshS: 255
+    ThreshV: 40
+    NDilate1: 2
+    NErode1: 2
+    SWidth: 30.
+    NonZeroMin: 5.0000000000000000e-01
+    NonZeroMax: 1.5000000000000000e+00
+    VPMax: 5.
+    VSMax: 1.
+    NReset: 3
+    DistMaxCalib: 8.0000001192092896e-01
+    DSMaxCalib: 5.0000000000000000e-01
+    DSEmp: 4.
+    DPEmp: 10.
+    NCalibPoints: 10
+
+ObjDetTrack:
+  - {}
