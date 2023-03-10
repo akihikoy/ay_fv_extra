@@ -46,7 +46,7 @@ CameraParams:
     Backlight Compensation: 0
     Brightness: 0
     Contrast: 2
-    Exposure (Absolute): 150
+    Exposure (Absolute): 120
     'Exposure, Auto': 1
     Gain: 3
     Gamma: 0
@@ -120,7 +120,7 @@ ObjDetTrack:
     BackProjScale: 5.0
     NThreshold2: 150
     NErode2: 0
-    NDilate2: 0
+    NDilate2: 2
     NCalibBGFrames: 3
     ObjSW: 3
     ObjSH: 3
