@@ -60,7 +60,7 @@ BlobTracker2:
     SBDParams:
       thresholdStep: 5.
       minThreshold: 5.
-      maxThreshold: 70.
+      maxThreshold: 95.
       minRepeatability: 2
       minDistBetweenBlobs: 10.
       filterByColor: 1
@@ -69,13 +69,13 @@ BlobTracker2:
       minArea: 250.
       maxArea: 3100.
       filterByCircularity: 1
-      minCircularity: 1.0000000149011612e-01
+      minCircularity: 0.05
       maxCircularity: 3.4028234663852886e+38
       filterByInertia: 1
       minInertiaRatio: 9.9999997764825821e-03
       maxInertiaRatio: 3.4028234663852886e+38
       filterByConvexity: 1
-      minConvexity: 8.7000000476837158e-01
+      minConvexity: 0.5
       maxConvexity: 3.4028234663852886e+38
     ThresholdingImg: 0
     ThreshH: 180
