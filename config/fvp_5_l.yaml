@@ -4,15 +4,17 @@ CameraInfo:
   -
     Name: fvp_1_l
     DevID: "/media/video_fv1"
+    #640x480:
     Width: 640
     Height: 480
-    FPS: 60
+    #320x240:
     #Width: 320
     #Height: 240
+    FPS: 60
     PixelFormat: MJPG
     NRotate90: 0
     Flip: 0
-    #Rectification: 0
+    #640x480:
     Rectification: 1
     Alpha: 1.0
     K: !!opencv-matrix
@@ -33,6 +35,8 @@ CameraInfo:
       cols: 3
       dt: d
       data: [ 1.0, 0.0, 0.0,  0.0, 1.0, 0.0,  0.0, 0.0, 1.0 ]
+    #320x240:
+    #Rectification: 0
 
 #Camera parameters.
 #For applying the configuration:
@@ -66,8 +70,12 @@ BlobTracker2:
       filterByColor: 1
       blobColor: 0
       filterByArea: 1
+      #640x480:
       minArea: 250.
       maxArea: 3100.
+      #320x240:
+      #minArea: 50.
+      #maxArea: 600.
       filterByCircularity: 1
       minCircularity: 0.05
       maxCircularity: 3.4028234663852886e+38
@@ -83,7 +91,10 @@ BlobTracker2:
     ThreshV: 69
     NDilate1: 0
     NErode1: 0
+    #640x480:
     SWidth: 60
+    #320x240:
+    #SWidth: 40
     NonZeroMin: 0.
     NonZeroMax: 3.3299999237060547e+00
     VPMax: 6.
