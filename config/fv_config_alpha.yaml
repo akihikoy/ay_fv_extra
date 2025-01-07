@@ -1,0 +1,6 @@
+%YAML:1.0
+
+CONFIG_NAME: FV+Alpha
+
+#FV_L_CONFIG: config/fvp300x_l.yaml
+#FV_R_CONFIG: config/fvp300x_r.yaml
