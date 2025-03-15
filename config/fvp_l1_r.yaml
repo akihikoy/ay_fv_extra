@@ -46,7 +46,7 @@ CameraParams:
     Backlight Compensation: 0
     Brightness: 0
     Contrast: 2
-    Exposure (Absolute): 150
+    Exposure (Absolute): 120
     'Exposure, Auto': 1
     Gain: 3
     Gamma: 0
@@ -68,8 +68,10 @@ BlobTracker2:
       filterByColor: 1
       blobColor: 0
       filterByArea: 1
-      minArea: 50.
-      maxArea: 600.
+      #SmallMarkers:
+      minArea: 20.
+      #SmallMarkers:
+      maxArea: 300.
       filterByCircularity: 1
       minCircularity: 0.05
       maxCircularity: 3.4028234663852886e+38
@@ -85,12 +87,14 @@ BlobTracker2:
     ThreshV: 69
     NDilate1: 0
     NErode1: 0
-    #320x240:
-    SWidth: 40
+    #SmallMarkers:
+    SWidth: 20
     NonZeroMin: 0.
     NonZeroMax: 3.3299999237060547e+00
-    VPMax: 6.
-    VSMax: 20.
+    #SmallMarkers:
+    VPMax: 4.
+    #SmallMarkers:
+    VSMax: 3.
     NReset: 5
     DistMaxCalib: 1.4699999094009399e+00
     DSMaxCalib: 1.1399999856948853e+00
