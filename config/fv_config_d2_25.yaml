@@ -1,6 +1,6 @@
 %YAML:1.0
 
-CONFIG_NAME: FV+Alpha
+CONFIG_NAME: D2_25
 
 FV_L_CONFIG: config/fvp300x_l.yaml
 FV_R_CONFIG: config/fvp300x_r.yaml

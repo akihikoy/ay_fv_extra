@@ -2,5 +2,5 @@
 
 CONFIG_NAME: Cyl1
 
-#FV_L_CONFIG: config/fvp_cyl1_l.yaml
-#FV_R_CONFIG: config/fvp_cyl1_r.yaml
+FV_L_CONFIG: config/fvp300x_l.yaml
+FV_R_CONFIG: config/fvp300x_r.yaml

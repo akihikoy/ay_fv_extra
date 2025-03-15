@@ -1,0 +1,6 @@
+%YAML:1.0
+
+CONFIG_NAME: L1
+
+FV_L_CONFIG: config/fvp_l1_l.yaml
+FV_R_CONFIG: config/fvp_l1_r.yaml
