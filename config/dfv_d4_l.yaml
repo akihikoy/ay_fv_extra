@@ -46,16 +46,19 @@ CameraParams:
     Backlight Compensation: 0
     Brightness: 0
     Contrast: 2
-    Exposure (Absolute): 110
-    'Exposure, Auto': 3
-    Gain: 2
+    'Exposure (Absolute)': 120
+    'Exposure Time, Absolute': 120
+    'Exposure, Auto': 1
+    'Auto Exposure': 1
+    Gain: 1
     Gamma: 0
     Hue: 0
-    Power Line Frequency: 2
+    'Power Line Frequency': 2
     Saturation: 130
     Sharpness: 2
-    White Balance Temperature: 5000
+    'White Balance Temperature': 5000
     'White Balance Temperature, Auto': 0
+    'White Balance, Automatic': 0
 
 #BlobTracker2:
   #-

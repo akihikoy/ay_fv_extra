@@ -44,16 +44,19 @@ CameraParams:
     Backlight Compensation: 0
     Brightness: 0
     Contrast: 2
-    Exposure (Absolute): 300
+    'Exposure (Absolute)': 300
+    'Exposure Time, Absolute': 300
     'Exposure, Auto': 1
+    'Auto Exposure': 1
     Gain: 3
     Gamma: 0
     Hue: 0
-    Power Line Frequency: 2
+    'Power Line Frequency': 2
     Saturation: 130
     Sharpness: 2
-    White Balance Temperature: 4000
+    'White Balance Temperature': 4000
     'White Balance Temperature, Auto': 0
+    'White Balance, Automatic': 0
 
 BlobTracker2:
   -
