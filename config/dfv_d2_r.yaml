@@ -42,6 +42,8 @@ CameraInfo:
 #  $ rosrun fingervision conf_cam2.py /dev/videoX "file:CameraParams:0:`rospack find ay_fv_extra`/config/fvp3001.yaml
 #For adjusting the configuration:
 #  $ rosrun fingervision conf_cam_gui.py /dev/videoX
+CameraParams:
+  -
     Backlight Compensation: 0
     Brightness: 0
     Contrast: 2
